@@ -1,5 +1,6 @@
 import React from 'react';
 import { img100, img101, img102, img103 } from '../../imports';
+import FadeIn from '../fadein';
 
 const steps = [
     {
@@ -41,6 +42,7 @@ const Process = () => {
                 {/* Two per row for all screen sizes */}
                 <div className="grid lg:grid-cols-2 gap-8">
                     {steps.map((step, index) => (
+                        <FadeIn duration={100}>
                         <div
                             key={index}
                             className="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 text-center"
@@ -53,6 +55,7 @@ const Process = () => {
                             <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
                             <p className="text-gray-600">{step.description}</p>
                         </div>
+                        </FadeIn>
                     ))}
                 </div>
             </div>
