@@ -60,7 +60,7 @@ const serviceList = [
 const Services = () => {
   return (
     <section className="bg-customBlue min-h-screen py-16 px-6 lg:px-12">
-      <h1 className='text-white'>In Progres...</h1>
+      <h1 className='text-white'>In Progress...</h1>
     </section>
   );
 };
