@@ -1,30 +1,21 @@
 import React from "react";
 import { img12 } from "../../imports";
 import {
-  BuildingOfficeIcon,
-  // HandshakeIcon,
-  LightBulbIcon,
-  PresentationChartBarIcon,
-  WrenchScrewdriverIcon,
-  ClipboardDocumentListIcon,
-  CurrencyDollarIcon,
-  HomeModernIcon,
-  UsersIcon,
+  SparklesIcon,
+  HomeIcon,
+  UserGroupIcon,
+  HeartIcon,
   PhoneIcon,
   MapPinIcon
 } from "@heroicons/react/24/outline";
 
 const services = [
-  { icon: <BuildingOfficeIcon className="w-5 h-5 text-gold-400" />, text: "Brokerage & Property Sourcing" },
-  // { icon: <HandshakeIcon className="w-5 h-5 text-gold-400" />, text: "Deal Negotiation" },
-  { icon: <LightBulbIcon className="w-5 h-5 text-gold-400" />, text: "Real Estate Advisory & Development" },
-  { icon: <PresentationChartBarIcon className="w-5 h-5 text-gold-400" />, text: "Business Initiation" },
-  { icon: <ClipboardDocumentListIcon className="w-5 h-5 text-gold-400" />, text: "Business Development Advisory" },
-  { icon: <CurrencyDollarIcon className="w-5 h-5 text-gold-400" />, text: "Investment Analysis" },
-  { icon: <CurrencyDollarIcon className="w-5 h-5 text-gold-400" />, text: "Mortgage Loan Advisory" },
-  { icon: <WrenchScrewdriverIcon className="w-5 h-5 text-gold-400" />, text: "Construction & Renovations" },
-  { icon: <UsersIcon className="w-5 h-5 text-gold-400" />, text: "Real Estate Investment Club" },
-  { icon: <HomeModernIcon className="w-5 h-5 text-gold-400" />, text: "Property Management" },
+  { icon: <SparklesIcon className="w-5 h-5 text-customIndigo" />, text: "General Cleaning of Buildings" },
+  { icon: <UserGroupIcon className="w-5 h-5 text-customIndigo" />, text: "Residential Care for Elderly & Disabled" },
+  { icon: <HeartIcon className="w-5 h-5 text-customIndigo" />, text: "Specialist Cleaning for Sensitive Environments" },
+  { icon: <HomeIcon className="w-5 h-5 text-customIndigo" />, text: "Domestic & Commercial Cleaning" },
+  { icon: <SparklesIcon className="w-5 h-5 text-customIndigo" />, text: "Washing & Dry-Cleaning of Textiles" },
+  { icon: <SparklesIcon className="w-5 h-5 text-customIndigo" />, text: "Fur Product Cleaning & Care" },
 ];
 
 const About = () => {
@@ -37,32 +28,31 @@ const About = () => {
             <img
               className="rounded-3xl w-full h-auto object-cover shadow-lg"
               src={img12}
-              alt="LumiGrid Panel"
+              alt="Gipto Limited Cleaning Service"
             />
           </div>
 
           {/* Text Section */}
           <div className="w-full lg:w-1/2 text-white">
-            <h2 className="text-5xl font-extrabold mb-6 tracking-tight">Who are we</h2>
+            <h2 className="text-4xl font-extrabold mb-6 tracking-tight text-white">Who We Are</h2>
 
             <p className="text-base leading-relaxed mb-6">
-              Boomanage Properties is an indigenous Real Estate and Business Development firm with expertise in Real Estate Development, Dynamic Marketing & Brokerage, Business Initiation & Business Development Advisory, Real Estate Trainings, Management, Investment and Mortgage Advisory and Consultancy.
+              Gipto Limited is a professional cleaning and care services company based in Newbury, United Kingdom. 
+              We are committed to keeping homes, offices, and care facilities spotless while ensuring the highest 
+              standards of hygiene and customer satisfaction.
             </p>
 
             <div className="flex items-center gap-2 mb-4">
-              <MapPinIcon className="w-5 h-5 text-gold-400" />
-              <p className="text-sm">Currently located at the Maryland Mall, Maryland, Lagos.</p>
+              <MapPinIcon className="w-5 h-5 text-customIndigo" />
+              <p className="text-sm">Proudly serving Newbury and surrounding areas in the UK.</p>
             </div>
 
             <p className="text-base mb-4">
-              We provide professional services that seek to create enduring value for our diverse clientele.
+              From general building cleaning to specialised care for the elderly and disabled, 
+              we handle every task with professionalism, compassion, and attention to detail.
             </p>
 
-            <p className="text-base mb-6">
-              If you would like to purchase your property or have a property you would like to sell, kindly put a call through to us today.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-gold-400 mb-4">Our Services:</h3>
+            <h3 className="text-2xl font-semibold text-customIndigo mb-4">Our Services:</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm mb-6">
               {services.map((service, index) => (
                 <li key={index} className="flex items-start gap-2">
@@ -73,9 +63,9 @@ const About = () => {
             </ul>
 
             <div className="flex items-center gap-3">
-              <PhoneIcon className="w-5 h-5 text-gold-400" />
+              <PhoneIcon className="w-5 h-5 text-customIndigo" />
               <p className="text-sm">
-                +2348139096910; +2348123173582
+                +44 1635 123456
               </p>
             </div>
           </div>

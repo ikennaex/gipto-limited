@@ -59,38 +59,8 @@ const serviceList = [
 
 const Services = () => {
   return (
-    <section className="bg-customBlue py-16 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto text-white">
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl font-extrabold mb-4">
-            Our Services at <span className="text-customYellow">Boomanage Properties</span>
-          </h2>
-          <p className="text-lg opacity-80">
-            Discover our wide range of real estate and business development services tailored to empower your investments and ideas.
-          </p>
-        </div>
-
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {serviceList.map((service, index) => (
-            <FadeIn duration = {100} >
-            <div
-              key={index}
-              className="bg-white/5 backdrop-blur-md hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 p-6 rounded-3xl flex flex-col justify-between h-full"
-            >
-              <img
-                src={service.img}
-                alt={service.name}
-                className="object-cover w-full h-48 rounded-2xl mb-5 shadow"
-              />
-              <div>
-                <h3 className="text-xl font-bold text-customYellow mb-2">{service.name}</h3>
-                <p className="text-sm leading-relaxed text-gray-100">{service.desc}</p>
-              </div>
-            </div>
-            </FadeIn>
-          ))}
-        </div>
-      </div>
+    <section className="bg-customBlue min-h-screen py-16 px-6 lg:px-12">
+      <h1 className='text-white'>In Progres...</h1>
     </section>
   );
 };
