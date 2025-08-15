@@ -17,8 +17,9 @@ import img101 from "./assets/img101.jpg"
 import img102 from "./assets/img102.jpg"
 import img103 from "./assets/img103.jpg"
 import agent from "./assets/agent.png"
+import spray from "./assets/spray.gif"
 
 
 export {
-    logo, ceo, img1, img2, img3, img4, img5, img6, img7, img8,img9, img10,img12,img13, img100, img101, img102, img103, agent
+    logo, ceo, img1, img2, img3, img4, img5, img6, img7, img8,img9, img10,img12,img13, img100, img101, img102, img103, agent, spray
 }
