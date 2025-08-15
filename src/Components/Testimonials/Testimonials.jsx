@@ -4,25 +4,26 @@ import { motion, AnimatePresence } from 'framer-motion'
 const testimonials = [
   {
     quote:
-      '“Boomanage Properties helped me secure my first investment property with ease. Their advisory team was patient, professional, and incredibly knowledgeable.”',
-    author: '— Linda O., Lekki'
+      '“Gipto Limited did a fantastic job cleaning our office space. Everything was spotless, and the team was punctual and professional throughout.”',
+    author: '— Sarah M., Newbury'
   },
   {
     quote:
-      '“I had no idea where to start with real estate investment until I met Boomanage. They broke down the process and guided me step-by-step. Now I own 2 properties.”',
-    author: '— Taiwo T., Abuja'
+      '“Their residential care cleaning service is outstanding. They treated my elderly mother’s home with so much care and attention to detail.”',
+    author: '— James L., Reading'
   },
   {
     quote:
-      '“Their team helped me negotiate a great deal on a commercial space. It was a seamless experience from property sourcing to documentation.”',
-    author: '— Adewale R., Ikeja'
+      '“I was impressed with how fresh and perfectly cleaned my clothes looked after their dry-cleaning service. Highly recommended!”',
+    author: '— Emma R., Basingstoke'
   },
   {
     quote:
-      '“With Boomanage Properties, I joined a real estate investment club that’s already showing returns. Their network and experience are unmatched.”',
-    author: '— Johnson P., Victoria Island'
+      '“From booking to final inspection, Gipto Limited made the entire cleaning process stress-free. Our building has never looked better.”',
+    author: '— David H., Thatcham'
   }
 ];
+
 
 
 const Testimonials = () => {

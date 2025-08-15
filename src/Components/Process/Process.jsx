@@ -39,7 +39,7 @@ const Process = () => {
                 </div>
 
                 {/* Two per row for all screen sizes */}
-                <div className="grid grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-2 gap-8">
                     {steps.map((step, index) => (
                         <div
                             key={index}
