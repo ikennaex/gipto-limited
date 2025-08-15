@@ -20,7 +20,7 @@ const Herosection = () => {
           <div className="lg:px-10 pt-14 container mx-auto px-7 min-h-[80vh] lg:p-28 p-8 gap-4 flex flex-col lg:flex-row lg:justify-between items-center">
             <div className="flex flex-col lg:items-center ">
               <div className="flex items-center gap-1 my-5">
-                <div className="w-2 h-2 bg-customYellow rounded-sm"></div>
+                <div className="w-2 h-2 bg-customIndigo rounded-sm"></div>
                 <p className="text-white font-bold">
                   Welcome to Gipto Limited
                 </p>

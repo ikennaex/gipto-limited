@@ -9,6 +9,7 @@ export default {
       colors: {
         customBlue: "#061842",
         customYellow: "#B66C45",
+        customIndigo: "#4F46E5"
       },
       keyframes: {
         'fade-in-up': {

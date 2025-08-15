@@ -37,7 +37,7 @@ const Services = () => {
                   animationFillMode: "both",
                 }}
               >
-                <div className="text-customYellow text-xl mt-1">{service.icon}</div>
+                <div className="text-customIndigo text-xl mt-1">{service.icon}</div>
                 <span className="text-left">{service.name}</span>
               </div>
             </FadeIn>

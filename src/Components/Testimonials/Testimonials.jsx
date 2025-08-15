@@ -43,9 +43,9 @@ const Testimonials = () => {
   }
 
   return (
-    <div className='bg-white px-7 py-14 bg-orange-50'>
+    <div className='bg-white px-7 py-14'>
       <div className='container mx-auto max-w-3xl text-center'>
-        <h2 className='text-3xl font-bold text-black mb-10'>Our Clients Say It Best</h2>
+        <h2 className='text-3xl font-bold text-black mb-10'>What Our Clients Say</h2>
 
         <div className='relative h-48 sm:h-52 md:h-56 lg:h-64 overflow-hidden'>
           <AnimatePresence mode='wait'>
