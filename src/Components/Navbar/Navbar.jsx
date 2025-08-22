@@ -27,11 +27,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className=' mx-auto px-9 py-4 bg-white'>
+    <div className=' mx-auto px-9 bg-white'>
         <div className='lg:py-0.5 flex items-center justify-between'>
         <Link to = "/" >
-        {/* <img className='lg:h-18 lg:mr-60 h-12' src= {logo} alt="" /> */}
-        Gipto Limited
+        <img className='lg:h-24 lg:mr-60 h-20' src= {logo} alt="" />
+        {/* <img src= {logo} alt="" /> */}
         </Link>
         <div className='hidden gap-20 mx-auto lg:flex cursor-pointer'>
             {menuItems.map(menu => (
@@ -43,7 +43,7 @@ const Navbar = () => {
 
               :
               <Link to={menu.link} className='nav-link'>
-                <p className='nav-menu text-[14px] hover:text-customIndigo hover:font-bold'>{menu.name}</p>
+                <p className='nav-menu text-[16px] hover:text-customIndigo hover:font-bold'>{menu.name}</p>
                 {/* {menu.name} */}
               </Link>
 

@@ -18,7 +18,7 @@ const App = () => {
     // Option 1: Hide loader after a fixed time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // show loader for 2 seconds
+    }, 1000); // show loader for 1 second
 
     return () => clearTimeout(timer);
 
