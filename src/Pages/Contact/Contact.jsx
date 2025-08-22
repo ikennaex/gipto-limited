@@ -73,12 +73,14 @@ const Contact = () => {
                 <div className="flex-shrink-0">
                   <FaPhoneAlt className="text-customIndigo text-2xl" />
                 </div>
+                  <a href="tel:+44 7859 272275">
                 <div>
                   <p className="font-medium text-gray-900">+44 7859 272275</p>
                   <p className="text-sm text-gray-500">
                     24 Hrs (Mon - Fri) / 8am - 8pm (Weekends)
                   </p>
                 </div>
+                </a>
               </div>
             </div>
           </div>
