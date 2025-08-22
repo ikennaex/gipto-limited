@@ -59,6 +59,7 @@ const Contact = () => {
                 <div className="flex-shrink-0">
                   <FaEnvelope className="text-customIndigo text-2xl" />
                 </div>
+                <a href="#contact-form">
                 <div>
                   <p className="font-medium text-gray-900">Submit a Request</p>
                   <p className="text-sm text-gray-500">
@@ -66,6 +67,7 @@ const Contact = () => {
                   </p>
                   {/* <span className="text-sm text-customIndigo">info@giptolimited.co.uk</span> */}
                 </div>
+                </a>
               </div>
 
               {/* Phone Section */}
@@ -87,7 +89,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-white rounded-3xl shadow-lg p-8">
-            <form ref={form} onSubmit={sendEmail} className="space-y-6">
+            <form id="contact-form" ref={form} onSubmit={sendEmail} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Full Name
