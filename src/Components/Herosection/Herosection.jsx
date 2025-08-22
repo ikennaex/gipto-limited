@@ -22,15 +22,15 @@ const Herosection = () => {
               <div className="flex items-center gap-1 my-5">
                 <div className="w-2 h-2 bg-customIndigo rounded-sm"></div>
                 <p className="text-white font-bold">
-                  Welcome to Gipto Limited
+                  GIPTO LIMITED
                 </p>
               </div>
 
-              <h1 className="lg:text-5xl lg:w-3/4 leading-[1.2] font-black header-text text-3xl text-white text-center pb-6 slide-in-fwd-center">
+              <h1 className="lg:text-6xl lg:w-3/4 leading-[1.2] font-black header-text text-3xl text-white text-center pb-6 slide-in-fwd-center">
                 The Best Cleaning Service in the United Kingdom
               </h1>
 
-              <p className="text-white text-center">
+              <p className="text-white lg:text-xl text-center">
                 Impeccable, detail-oriented and professional house & office cleaning services in the UK.
               </p>
 

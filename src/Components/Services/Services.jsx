@@ -2,8 +2,10 @@ import React from "react";
 import { FaBroom, FaHome, FaTshirt, FaPumpSoap, FaTools, FaBuilding, FaTruckPickup, FaCouch, FaBiohazard, FaCalendarCheck } from "react-icons/fa";
 import FadeIn from "../fadein";
 import { Link } from "react-router-dom"; // corrected import
+import { FaBriefcase } from "react-icons/fa6";
 
 const services = [
+  { name: "Employment Agency Services", icon: <FaBriefcase /> },
   { name: "General Cleaning of Buildings", icon: <FaBroom /> },
   { name: "Residential Care for the Elderly and Disabled", icon: <FaHome /> },
   { name: "Washing and Dry-Cleaning of Textile and Fur Products", icon: <FaTshirt /> },

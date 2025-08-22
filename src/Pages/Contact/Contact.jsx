@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
   const [fullName, setFullName] = useState("");
@@ -13,18 +13,20 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_kf80s0g', 'template_waassmf', form.current, {
-        publicKey: 'nK6b5sNutEBmb4Jfn',
+      .sendForm("service_kf80s0g", "template_waassmf", form.current, {
+        publicKey: "nK6b5sNutEBmb4Jfn",
       })
       .then(
         () => {
-          alert("Your message has been sent successfully. We’ll get back to you shortly.");
+          alert(
+            "Your message has been sent successfully. We’ll get back to you shortly."
+          );
           setFullName("");
           setEmail("");
           setMessage("");
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.log("FAILED...", error.text);
         }
       );
   };
@@ -36,30 +38,47 @@ const Contact = () => {
           Contact Gipto Limited
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-          Whether you need a one-off clean, ongoing care services, or specialist laundry, 
-          we’re here to help. Reach out to our friendly team today.
+          Whether you need a one-off clean, ongoing care services, or specialist
+          laundry, we’re here to help. Reach out to our friendly team today.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Contact Information */}
-          <div className="bg-white rounded-3xl shadow-lg p-8 space-y-6">
-            <h3 className="text-2xl font-bold text-customIndigo">We’d Love to Hear From You</h3>
-            <p className="text-gray-700">
-              Let’s make your space shine. Contact us for bookings, quotes, or any questions about our services.
+          <div className="bg-white rounded-3xl shadow-xl p-10 space-y-8">
+            <h3 className="text-3xl font-bold text-customIndigo">
+              We’d Love to Hear From You
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Let’s make your space shine. Contact us for bookings, quotes, or
+              any questions about our services.
             </p>
 
-            <div className="space-y-4 text-gray-800 text-[15px]">
-              <div className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-customIndigo text-xl" />
-                <span>Newbury, Berkshire, United Kingdom</span>
+            <div className="space-y-6">
+              {/* Email Section */}
+              <div className="flex items-start gap-4 bg-zinc-100 p-4 rounded-lg">
+                <div className="flex-shrink-0">
+                  <FaEnvelope className="text-customIndigo text-2xl" />
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">Submit a Request</p>
+                  <p className="text-sm text-gray-500">
+                    Reply by the end of the next working day
+                  </p>
+                  {/* <span className="text-sm text-customIndigo">info@giptolimited.co.uk</span> */}
+                </div>
               </div>
-              <div className="flex items-center gap-3">
-                <FaEnvelope className="text-customIndigo text-xl" />
-                <span>info@giptolimited.co.uk</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaPhoneAlt className="text-customIndigo text-xl" />
-                <span>+44 1635 123456</span>
+
+              {/* Phone Section */}
+              <div className="flex items-start gap-4 bg-zinc-100 p-4 rounded-lg">
+                <div className="flex-shrink-0">
+                  <FaPhoneAlt className="text-customIndigo text-2xl" />
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">+44 7859 272275</p>
+                  <p className="text-sm text-gray-500">
+                    24 Hrs (Mon - Fri) / 8am - 8pm (Weekends)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -68,7 +87,9 @@ const Contact = () => {
           <div className="bg-white rounded-3xl shadow-lg p-8">
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Full Name
+                </label>
                 <input
                   type="text"
                   name="user_name"
@@ -80,7 +101,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Email Address
+                </label>
                 <input
                   type="email"
                   name="user_email"
@@ -92,7 +115,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Message
+                </label>
                 <textarea
                   name="message"
                   value={message}
