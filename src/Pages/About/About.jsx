@@ -64,9 +64,11 @@ const About = () => {
 
             <div className="flex items-center gap-3">
               <PhoneIcon className="w-5 h-5 text-customIndigo" />
+              <a href="tel:+447859272275">Call Us
               <p className="text-sm">
-                +44 1635 123456
+                +44 7859 272275
               </p>
+              </a>
             </div>
           </div>
         </div>
